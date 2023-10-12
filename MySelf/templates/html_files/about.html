@@ -1,0 +1,106 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel='stylesheet' href="{% static "css/about.css" %}">
+  </head>
+
+  <body background="{% static 'images/bg.jpg' %}">
+    <nav class="navbar" style="background-color: black;">
+      <div class="container">
+        <a class="navbar-brand" style="color: #ffe600; font-family: Georgia, serif;">My Portfolio / About</a>
+        <button type="button" class="btn btn-warning" style="font-family: Georgia, serif;"><i class="bi bi-gear-fill"></i> Options</button>
+
+      </div>
+    </nav>
+
+
+    <div class="row row-cols-2 md-4" name="card_number1">
+      <div class="col" style="width: 20%; margin: 75px 0px 100px 270px;">
+        <div class="shadow p-3 card" style="text-align: center; background-color: #f9f9f9;">
+
+          <img src="{% static "images/me.jpg"%}" style="width: 57%; display: ; margin-left: auto; margin-right: auto; margin-top: 25px; border-radius: 35%;"/>
+
+          <div class="card-body">
+            <h2 class="card-title" name="card_name">JR Angelo Indaya</h2>
+            <h6 name="card_label_name"> Web Developer </h6>
+          </div>
+
+          <div style="margin: 30px 0px 30px 0px;">
+            <p><a href="{% url 'about' %}" name="card_profile"><i class="bi bi-house-door"></i> Home</a></p>
+            <p><a href="{% url 'about' %}" name="card_profile"><i class="bi bi-file-person"></i> About </a></p>
+            <p><a href="{% url 'skills' %}" name="card_profile"><i class="bi bi-boxes"></i> Skills </a></p>
+            <p><a href="#" name="card_profile"><i class="bi bi-mortarboard"></i> Education </a></p>
+            <p><a href="{% url 'contact' %}" name="card_profile"><i class="bi bi-telephone"></i> Contact Me </a></p>
+          </div>
+
+          <div>
+            <p>Made with: <a href="https://getbootstrap.com/"<i class="bi bi-bootstrap">ootstrap<a></p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col" name="card_number1" style="margin: 75px 0px 100px 0px;" >
+        <div class="shadow p-3 card" style="background-color: #f9f9f9;">
+          <div class="card-body" style="margin: 25px 75px 10px 75px; text-align:center; ">
+            <h5 class="card-title" style="font-size: 50px; margin: 0px 0px 10px 0px;">About Me</h5>
+            <p class="card-text" style="font-size: 18px;">
+              Hi, my name is JR Angelo I Indaya, a fresh graduate from Technological University of the Philippines Cavite with the finished course
+              Computer Engineering Technology and I would like to be a part of your team to work hard and learn many new things!
+            </p>
+
+          </div>
+
+          <div class="card-body" style="margin: 25px 75px 35px 75px; text-align:center; ">
+            <h5 class="card-title" style="font-size: 50px; margin: 0px 0px 10px 0px;">Personal Information</h5>
+            <br>
+
+            <div class="row" >
+              <div class="col-md-6">
+                  <h6 class="mb-0" style="font-size: 23px;"><i class="bi bi-person"></i> Age: </h6>
+              </div>
+              <div class="col-md-5 text-secondary" style="font-size: 21px;">
+                  22
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                  <h6 class="mb-0" style="font-size: 23px;"><i class="bi bi-cake2"></i> Birthday: </h6>
+              </div>
+              <div class="col-md-5 text-secondary" style="font-size: 21px;">
+                  January 31, 2001
+              </div>
+            </div>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-6">
+                  <h6 class="mb-0" style="font-size: 23px;">Height | Weight: </h6>
+              </div>
+              <div class="col-md-5 text-secondary" style="font-size: 21px;">
+                  5'9" | 80kg
+              </div>
+            </div>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+
+</html>

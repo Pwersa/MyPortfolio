@@ -1,0 +1,42 @@
+body {
+    background-color: white;
+    color: white;
+}
+
+h2[name="card_name"]{
+    font-family: Georgia, serif;
+}
+
+h6[name="card_label_name"]{
+    font-family: Georgia, serif;
+}
+
+a[name="card_profile"] {
+    color: black; 
+    font-size: 20px; 
+    text-decoration: none; 
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+a[name="card_profile"]:hover {
+    text-decoration: underline;
+}
+
+div[name="card_number2"]{
+    margin: 75px 0px 100px 0px;
+  
+}
+
+h5[name="card_number2_title"]{
+    font-size: 50px; 
+    margin: 0px 0px 50px 0px;
+}
+
+h6[name="card_number2_detail"]{
+    font-size: 23px;
+}
+
+div[name="click_here_label"]{
+    font-size: 20px;
+}
+

@@ -1,0 +1,16 @@
+body {
+    background-color: white;
+    color: white;
+}
+
+h1[name="card_title_projects"]{
+    font-family: Georgia, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+p[name="card_details_projects"]{
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
