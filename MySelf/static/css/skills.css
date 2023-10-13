@@ -14,3 +14,6 @@ p[name="card_details_projects"]{
     font-size: 20px;
 }
 
+img {
+    border: 3px solid #555;
+}
