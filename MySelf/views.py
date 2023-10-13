@@ -10,3 +10,6 @@ def contact(request):
 
 def skills(request):
     return render(request, 'html_files/skills.html')
+
+def education(request):
+    return render(request, 'html_files/education.html')
